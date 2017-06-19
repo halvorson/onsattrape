@@ -21,6 +21,18 @@ canvas {
 	color: #eee;
 }
 
+.birthday {
+	color: yellow;
+}
+
+.addNotes {
+	margin-left: 10px;
+}
+
+.viewNotes, .addNotes {
+	border: 1px solid #eee;
+}
+
 .panelButton {
 	margin-left: 5px;
 }
