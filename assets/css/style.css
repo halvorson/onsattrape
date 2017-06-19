@@ -21,6 +21,19 @@ canvas {
 	color: #eee;
 }
 
+.addNotesSmall, .viewNotesSmall {
+	border: 1px solid #eee;
+}
+
+.addNotes {
+	margin-left: 10px;
+	border: 1px solid rgb(51,102,153);
+}
+
+.viewNotes {
+	border: 1px solid rgb(235,104,100);
+}
+
 .panelButton {
 	margin-left: 5px;
 }
