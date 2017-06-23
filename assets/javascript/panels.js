@@ -88,6 +88,13 @@ $(function() {
 				//Nearby
 				panelHeading.append($("<div><i class='fa fa-globe locIcon pull-left' aria-hidden='true'></i></div>"));
 				break;
+				case 5:
+				// Bday and Nearby
+				panelHeading.append($("<div><i class='fa fa-birthday-cake bIcon pull-left' aria-hidden='true'></i></div>"));
+
+				panelHeading.append($("<div><i class='fa fa-globe locIcon pull-left' aria-hidden='true'></i></div>"));
+
+				break;
 			}
 
 			var panelHeadingIcons = $("<div>").addClass('pull-right');		
@@ -98,13 +105,13 @@ $(function() {
 
 			var notes = $("<span>");
 			if (contactVal.lastTalked) {
-				notes.append('<span><i class="fa fa-clock-o" aria-hidden="true"></i>' + " " + contactVal.lastTalked + "   " + "</span>");
+				notes.append('<span><i class="fa fa-clock-o clockIcon" aria-hidden="true"></i>' + " " + contactVal.lastTalked + "   " + "</span>");
 			}
 			if (contactVal.birthday) {
-				notes.append('<span class="text-center"><i class="fa fa-birthday-cake" aria-hidden="true"></i>' + " " + contactVal.birthday + "   " + "</span>");
+				notes.append('<span class="text-center"><i class="fa fa-birthday-cake bCakeIcon" aria-hidden="true"></i>' + " " + contactVal.birthday + "   " + "</span>");
 			}
 			if (contactVal.city) {
-				notes.append('<span class="text-center"><i class="fa fa-home" aria-hidden="true"></i>' + " " + contactVal.city + "   " + "</span>");
+				notes.append('<span class="text-center"><i class="fa fa-home homeIcon" aria-hidden="true"></i>' + " " + contactVal.city + "   " + "</span>");
 			}
 			notes.append('<br><br>');
 			notes.text();
@@ -225,6 +232,7 @@ $(function() {
 		viewNotes.addClass("btn btn-info viewNotes");
 		var iNotes = $("<i>");
 		iNotes.addClass("fa");
+		iNotes.addClass("viewNotesText")
 		iNotes.attr("aria-hidden", "true");
 		iNotes.text("View Notes");
 		viewNotes.append(iNotes);
@@ -236,6 +244,7 @@ $(function() {
 		addNotes.addClass("btn btn-primary addNotes");
 		var iaddNotes = $("<i>");
 		iaddNotes.addClass("fa");
+		iaddNotes.addClass("addNotesText");
 		iaddNotes.attr("aria-hidden", "true");
 		iaddNotes.text("Add Notes");
 		addNotes.append(iaddNotes);

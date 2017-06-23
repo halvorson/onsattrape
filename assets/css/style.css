@@ -75,7 +75,7 @@ canvas {
 #googleContactsSelectorModalDialog {
 	width: 90%!important;
 }
-
+ 
 #selectAllCheckboxDiv {
 	margin-right: 10px;
 }
@@ -86,6 +86,38 @@ canvas {
 
 #selectAllCheckboxText {
 	font-size: 16px;
+}
+
+.homeIcon, .bCakeIcon, .clockIcon {
+	color: rgb(51,102,153);
+	padding-left: 5px;
+	border-left: 1px dotted #eeeeee;
+}
+
+.bCakeIcon {
+	font-size: 12px;
+}
+
+div, .page-header, .panelTitle, .viewNotesText, .addNotesText {
+	font-family: "Bubbler One";
+	/*font-size: 12px;*/
+}
+
+.panel-header {
+	font-weight: bold;
+}
+
+.viewNotesText, .addNotesText {
+	font-weight: bold;
+}
+
+.panel.body {
+	font-size: 10px;
+}
+
+.navbar-brand {
+	font-family: "Architects Daughter";
+	font-size: 25px;
 }
 
 .bIcon {
